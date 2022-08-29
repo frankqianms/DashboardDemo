@@ -7,6 +7,7 @@ import { Button } from "@fluentui/react-northstar";
 import { useContext } from "react";
 import { TeamsFxContext } from "./Context";
 import { useGraph } from "@microsoft/teamsfx-react";
+import { PersonCardGraphToolkit } from './PersonCardGraphToolkit';
 
 /**
  * The 'Config' component is used to display your group tabs
@@ -74,6 +75,7 @@ class TabConfig extends React.Component {
           This is where you will add your tab configuration options the user can choose when the tab
           is added to your team/group chat.
           <Button primary content="Authorize" disabled={loading} onClick={reload} />
+          <PersonCardGraphToolkit loading={loading} data={data} error={error} />
         </div>
       </div>
     );

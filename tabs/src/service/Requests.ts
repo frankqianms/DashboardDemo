@@ -6,3 +6,6 @@ import TaskModel from '../model/TaskModel';
 export const getTask = (): TaskModel[] => Tasks;
 
 export const getFiles = (): FilesModel[] => Files;
+// export const getFiles = (): FilesModel[] => {
+//     const ;
+// }
